@@ -13,21 +13,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.loader.timeout = 20;
-
-  boot.loader.grub.enable = false;
-
-  # boot.loader.grub = {
-  #   enable = true;
-  #   device = "nodev"; # For UEFI, common to use "nodev"
-  #   efiSupport = true;
-  #   useOSProber = true; # Enable detection of other OSes
-
-  #   default = 2; # Set the default boot entry
-
-  #   timeoutStyle = "menu"; # Always show the menu
-  # };
-
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
