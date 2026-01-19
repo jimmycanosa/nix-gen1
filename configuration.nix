@@ -50,14 +50,11 @@
   services.keyd = {
     enable = true;
     keyboards = {
-      # This is the keyboard name discovered from your system.
-      "platform-i8042-serio-0-event-kbd" = {
+      default = {  # Changed from the specific hardware ID to "default"
         ids = [ "*" ];
         settings = {
           main = {
-            # Remap CapsLock to Left Control
             capslock = "leftcontrol";
-            # Remap Right Shift to CapsLock
             rightshift = "capslock";
           };
         };
