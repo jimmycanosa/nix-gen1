@@ -54,7 +54,7 @@
         ids = [ "*" ];
         settings = {
           main = {
-            capslock = "leftcontrol";
+            capslock = "overloadt2(control, esc, 150)";
             rightshift = "capslock";
           };
         };
